@@ -1,0 +1,6 @@
+name: "red-alert-2"
+displayName: "red-alert-2"
+author: gkg
+description:"this is a test mod that may implement red alert 2 assets"
+version: 0.1
+minGameVersion: 121

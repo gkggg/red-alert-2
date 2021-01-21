@@ -1,0 +1,10 @@
+type: ore
+name: "[gold]gold"
+description: "rlly [gold]gud [white]thing"
+color: FFD700	
+explosiveness: 0.0	
+flammability: 0.0	
+radioactivity: 0.0	
+hardness: 1	
+cost: 1.0	
+details:"[gold]main resource"

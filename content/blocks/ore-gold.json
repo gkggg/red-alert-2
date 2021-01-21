@@ -1,0 +1,5 @@
+type: OreBlock
+color: FFD700
+itemDrop: gold
+hasColor: true
+mapColor: FFD700

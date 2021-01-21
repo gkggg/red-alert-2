@@ -1,0 +1,1 @@
+Blocks.ground-factory.buildVisibility = BuildVisibility.hidden;
