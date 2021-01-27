@@ -1,0 +1,211 @@
+flying: false
+type : mech
+//	If true, the unit is always at elevation 1.
+//constructor: null
+//Prov<? extends Unit>	
+//defaultController	Prov<? extends UnitController>	{code}
+speed: 1.1	
+boostMultiplier: 1.0	
+rotateSpeed: 5.0	
+baseRotateSpeed: 5.0	
+drag: 0.3	
+accel: 0.5
+landShake: 0.0	
+rippleScale: 1.0	
+fallSpeed: 0.018	
+health: 1200
+range: 200
+armor: 0.0	
+maxRange: 200
+crashDamageMultiplier: 1.0	
+targetAir: 	false	
+targetGround: true	
+faceTarget: true	
+rotateShooting: true	
+isCounted: false
+//true
+//lowAltitude: true
+circleTarget: false	
+//canBoost: false	
+//destructibleWreck: true	
+//groundLayer: 0.0
+payloadCapacity: 8.0	
+aimDst: -1.0	
+buildBeamOffset: 3.8	
+commandLimit: 0
+//8
+visualElevation: 0.0
+//
+allowLegStep: false
+//
+hovering: false
+omniMovement: false
+//
+fallEffect: fallSmoke	
+fallThrusterEffect: fallSmoke	
+//abilities	Seq	new Seq<>()	
+//targetFlag	BlockFlag	generator	
+legCount: 4	
+legGroupSize: 2	
+legLength: 100
+//10.0
+legSpeed: 0.1	
+legTrns: 1.0	
+legBaseOffset: 0.0	
+legMoveSpace: 1.0	
+legExtension: 0.0	
+legPairOffset: 0.0	
+legLengthScl: 1.0	
+kinematicScl: 1.0	
+maxStretch: 1.75	
+legSplashDamage: 0.0	
+legSplashRange: 5.0	
+flipBackLegs: true	
+ammoResupplyAmount: 10	
+ammoResupplyRange: 100.0	
+mechSideSway: 0.54	
+mechFrontSway: 0.1	
+mechStride: -1.0	
+mechStepShake: -1.0	
+mechStepParticles: false	
+mechLegColor: 6e7080ff	
+itemCapacity: 250
+ammoCapacity: -1	
+//ammoType: copper	
+mineTier: 1	
+buildSpeed:-1.0	
+mineSpeed: 8.0
+mineSound: minebeam	
+mineSoundVolume: 0.6	
+dpsEstimate: -1.0	
+//This is a VERY ROUGH estimate of unit DPS.
+//clipSize: -1.0	
+canDrown: true	
+engineOffset: 50.0	
+//5.0,0.5
+engineSize: 100.5	
+//2.5
+strafePenalty: 20.0
+//0.5	
+hitSize: 18.0
+//6.0	
+itemOffsetY: -9.0
+//3.0	
+lightRadius: 60.0	
+lightOpacity: 0.6	
+lightColor: fbd367ff	
+drawCell: true	
+drawItems: true	
+drawShields: true	
+trailLength: 3	
+trailX: 4.0	
+trailY: -3.0	
+trailScl: 1.0	
+canHeal: false	
+//Whether the unit can heal blocks. Initialized in init()
+singleTarget: false	
+//immunities	ObjectSet	new ObjectSet<>()	
+deathSound: bang	
+//weapons	Seq	new Seq<>()	
+//baseRegion	TextureRegion	null	
+//legRegion	TextureRegion	null	
+//region	TextureRegion	null	
+//shadowRegion	TextureRegion	null	
+//cellRegion	TextureRegion	null	
+//softShadowRegion	TextureRegion	null	
+//jointRegion	TextureRegion	null	
+//footRegion	TextureRegion	null	
+//legBaseRegion	TextureRegion	null	
+//baseJointRegion	TextureRegion	null	
+//outlineRegion	TextureRegion	null	
+//wreckRegions	TextureRegion[]	null
+weapons: [
+{
+name: "mineturret"	
+//displayed weapon region
+bullet: null
+//	bullet shot ,bullet type
+//ejectEffect: none
+//	shell ejection effect , effect
+mirror: false
+//	whether to create a flipped copy of this weapon upon initialization. default: true
+flipSprite: false
+//	whether to flip the weapon's sprite when rendering
+alternate: true
+//	whether to shoot the weapons in different arms one after another, rather than all at once; only valid when mirror = true
+rotate: true
+//	whether to rotate toward the target independently of unit
+top: true
+//	whether to draw the outline on top.
+continuous: false
+//	whether to hold the bullet in place while firing
+rotateSpeed: 20.0
+//	rotation speed of weapon when rotation is enabled, in degrees/t
+reload: 60.0
+//	weapon reload in frames
+shots: 4
+//	amount of shots per fire
+spacing: 1.0
+//	spacing in degrees between multiple shots, if applicable
+inaccuracy: 0.0
+//	inaccuracy of degrees of each shot
+shake: 0.0
+//	intensity and duration of each shot's screen shake
+recoil: 2.5
+//	visual weapon knockback.
+shootX: 0.0
+//	projectile/effect offsets from center of weapon
+shootY: 8.0
+//	projectile/effect offsets from center of weapon
+x: 0.0
+//	offsets of weapon position on unit
+y: 2.4
+//	offsets of weapon position on unit
+xRand: 0.0
+//	random spread on the X axis
+shadow: -1.0
+//	radius of shadow drawn under the weapon; <0 to disable
+velocityRnd: 0.0
+//	fraction of velocity that is random
+firstShotDelay: 3.0
+//	delay in ticks between shots
+shotDelay: 3.0
+//	delay in ticks between shots
+shootCone: 200.0
+//	The half-radius of the cone in which shooting will start.
+cooldownTime: 20.0
+//	ticks to cool down the heat region
+soundPitchMin: 0.8
+//	random sound pitch range
+soundPitchMax: 1.0
+//	random sound pitch range
+ignoreRotation: false
+//	whether shooter rotation is ignored when shooting.
+minShootVelocity: -1.0
+//	min velocity required for this weapon to shoot
+otherSide: -1
+//	internal value used for alternation - do not change!
+shootSound: pew
+//	sound used for shooting
+//chargeSound	Sound	none
+//	sound used for weapons that have a delay
+noAmmoSound: noammo
+//	sound played when there is nothing to shoot
+//region	TextureRegion	null
+//	displayed region (autoloaded)
+//heatRegion	TextureRegion	null	heat region, must be same size as region (optional)
+//outlineRegion	TextureRegion	null	outline region to display if top is false
+heatColor: ab3400ff
+//	heat region tint
+shootStatus: none
+//	status effect applied when shooting
+shootStatusDuration: 300.0
+//	status effect duration when shot
+bullet: {
+    damage: 11
+    lifetime: 3.75
+    speed: 60
+    collidesAir: false
+}
+}
+]

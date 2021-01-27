@@ -1,1 +1,2 @@
-Blocks.ground-factory.buildVisibility = BuildVisibility.hidden;
+UnitTypes.mono.isHidden = isHidden.true;
+//bad
