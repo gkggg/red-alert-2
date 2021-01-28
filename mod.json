@@ -1,6 +1,6 @@
 name: "red-alert-2"
 displayName: "red-alert-2"
 author: gkg
-description:"a test mod that includes gold which is now totally useless and a miner"
+description:" a test mod that adds useless gold\n also adds a useless miner\n also make u can hear the legendary musicof red alert 2\n oh you dont know what is red alert 2, google it"
 version: 0.1
-minGameVersion: 121
+minGameVersion: 123
