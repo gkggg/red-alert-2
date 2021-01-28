@@ -4,7 +4,7 @@
 //Core.app.openURI("https://www.youtube.com/watch?v=fqlb0p11RcE");    
 //})
 Events.on(ClientLoadEvent, () => {
-    if (Vars.mobile)
+    if (!Vars.mobile)
     {
     Core.app.post(() => {
         Vars.ui.showConfirm("hi", "do you want a good soundtrack?\n if yes plase enable shuffle and loop", () => {
